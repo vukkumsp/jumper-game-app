@@ -1,17 +1,17 @@
 import "phaser";
 import { SampleEndGameScene } from "./sampleEndGameScene";
 import { SampleGameScene } from "./sampleGameScene";
-import { SampleWelcomeScene } from "./sampleWelcomeScene";
+import { WelcomeScene } from "./welcomeScene";
 
 //Use Phaser.Types.Core.GameConfig inplace of GameConfig
 const config: Phaser.Types.Core.GameConfig = {
     title: "Game Title", //You Game Title
-    width: 800,
-    height: 600,
+    width: 500,
+    height: 500,
     parent: "game",
     //All Scenes are mentioned here
     scene: [
-        SampleWelcomeScene, 
+        WelcomeScene, 
         SampleGameScene,
         SampleEndGameScene
     ],
