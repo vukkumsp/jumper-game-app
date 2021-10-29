@@ -1,7 +1,13 @@
 body{
     /* background-color: #cccccc; */
-    background-image: url("https://vsaiprakash.github.io/jumper-game-app/assets/images/backgrounds/background.svg");
+    background-image: url("./src/assets/images/backgrounds/background.svg");
     background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; 
+    /* background-repeat: no-repeat; */ /* Do not repeat the image */
+    background-size:cover; 
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

@@ -13,6 +13,7 @@ export class ScreenSize {
 
 
     getGameHeight(){
+        return 550;
         if(this.isMobile){
 
         }
@@ -22,6 +23,7 @@ export class ScreenSize {
     }
 
     getGameWidth(){
+        return 350;
         if(this.isMobile){
 
         }

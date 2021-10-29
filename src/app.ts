@@ -1,19 +1,23 @@
 import "phaser";
-import { SampleEndGameScene } from "./sampleEndGameScene";
-import { SampleGameScene } from "./sampleGameScene";
+import { EndGameScene } from "./endGameScene";
+import { MainGameScene } from "./mainGameScene";
 import { WelcomeScene } from "./welcomeScene";
+
+import { ScreenSize } from "./utils/screensize";
+
+const ss = new ScreenSize();
 
 //Use Phaser.Types.Core.GameConfig inplace of GameConfig
 const config: Phaser.Types.Core.GameConfig = {
     title: "Game Title", //You Game Title
-    width: 500,
-    height: 500,
+    width: ss.getGameWidth(),
+    height: ss.getGameHeight(),
     parent: "game",
     //All Scenes are mentioned here
     scene: [
         WelcomeScene, 
-        SampleGameScene,
-        SampleEndGameScene
+        MainGameScene,
+        EndGameScene
     ],
     physics: {
         default: "arcade", //Physics Type
@@ -21,7 +25,7 @@ const config: Phaser.Types.Core.GameConfig = {
             debug: false
         }
     },  //this will be the id of html element from index.html
-    backgroundColor: "#18216D"
+    backgroundColor: "#ff8b33"
 };
 
 //Extend Phaser.Game
